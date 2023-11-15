@@ -39,6 +39,9 @@ nav a {
 .fondo {
     background-color: darkgrey;
 }
+.fondo2{
+    background-color: lightgray;
+}
 
 #buscador {
     display: flex;
@@ -65,4 +68,12 @@ nav a {
 
 #div1{
     display:flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; /* Para apilar los elementos verticalmente */
+    width: 30%; /* Puedes ajustar el ancho según tus necesidades */
+    margin-right: 70%;
+    background-color: beige;
 }
