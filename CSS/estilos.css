@@ -1,57 +1,76 @@
 /*Estilos*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-header {
-    display: flex;
-    justify-content: space-between; /* Añadido para distribuir el espacio entre los elementos */
-    padding: 10px; /* Añadido para dar un poco de espacio alrededor del contenido del header */
-}
-
-#fotoPresentacion {
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-}
-
-nav {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos del nav */
-}
-
-nav ul {
-    list-style-type: none;
+*{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+body{
+    background-color: #949d9a;   
 }
 
-nav a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: x-large;
-}
 
-.fondo {
-    background-color: darkgrey;
-}
-.fondo2{
-    background-color: lightgray;
-}
-
-#buscador {
+.header{
+    background-color: #737b78;
     display: flex;
-    margin-left: 20px; /* Ajustado para dejar más espacio entre el menú y el buscador */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo img{
+    height: 80px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo h2{
+    margin-top: 10%;
+}
+
+.header .paginas {
+    list-style: none;
+}
+
+.header .paginas li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header .paginas a{
+    text-decoration: none;
+    color: black;
+}
+
+.header .paginas li:hover{
+    background-color: #515956;
+    transform: scale(1.08);
+}
+
+.header .paginas a:hover{
+    color: wheat;
+}
+
+#buscador{
+    display: flex;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
+
 .search-form {
     display: flex;
-    width: 300px; /* Ajusta el ancho del buscador según tus necesidades */
+    width: auto; /* Ajusta el ancho del buscador según tus necesidades */
 }
 
 .search-form input {
@@ -66,14 +85,4 @@ nav a {
     cursor: pointer;
 }
 
-#div1{
-    display:flex;
-}
 
-.form {
-    display: flex;
-    flex-direction: column; /* Para apilar los elementos verticalmente */
-    width: 30%; /* Puedes ajustar el ancho según tus necesidades */
-    margin-right: 70%;
-    background-color: beige;
-}
