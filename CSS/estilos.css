@@ -1,4 +1,14 @@
 /*Estilos*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
+}
+
 
 
 header {
@@ -33,7 +43,11 @@ nav a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size: x-large;
+}
+
+nav a:hover{
+    background-color: rgb(124, 124, 124);
+    transform: scale(1.02);
 }
 
 .fondo {
@@ -51,16 +65,17 @@ nav a {
 
 .search-form {
     display: flex;
-    width: 300px; /* Ajusta el ancho del buscador según tus necesidades */
+    /*width: 100%; /* Ajusta el ancho del buscador según tus necesidades */
 }
 
 .search-form input {
     flex: 1; /* Hace que el campo de entrada ocupe todo el espacio disponible */
-    padding: 5px;
+    padding: 0px;
 }
 
 .search-form button {
-    padding: 5px 10px;
+    padding: 0 10px;
+    margin-left: 5px;
     background-color: #ccc;
     border: none;
     cursor: pointer;
