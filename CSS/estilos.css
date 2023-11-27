@@ -200,11 +200,3 @@ header .navbar li a:hover{
 .container_principal .foto1 .infofoto:hover{
     cursor: pointer;
 }
-
-.container_principal{
-    display: flex;
-    flex-direction: column; /* Para apilar los elementos verticalmente */
-    width: 30%; /* Puedes ajustar el ancho segÃºn tus necesidades */
-    margin-right: 70%;
-    background-color: beige;
-}
