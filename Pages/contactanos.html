@@ -7,56 +7,56 @@
     <title>Document</title>
 </head>
 <body class="fondo2">
-    <header class="fondo">
-        <div id="div1">
-            <img src="..\Images\logo1.png" alt="Muebles" id="fotoPresentacion" >
-            <h2>Muy Muebles</h2>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="..\index.html">Inicio</a></li>
-                    <li><a href=".\quienesSomos.html">Quienes Somos</a></li>
-                    <li><a href=".\productos.html">Productos  </a></li>
-                </ul>
-                <form action="#" method="get" class="search-form" id="buscador">
-                    <input type="text" name="search" placeholder="Buscar...">
-                    <button type="submit">Buscar</button>
-                </form>
-            </nav>
-        </div>
+    <section>
+        <header>
+            <div class="logoimg">
+                <img src="../Images/logo1.png" alt="logo" id="logo">
+                <a href="../index.html" class="logo">Muy Muebles</a>
+            </div>
+            
+            <ul class="navbar">
+                <li><a href="../Pages/productos.html">Productos</a></li>
+                <li><a href="../Pages/quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="../Pages/contactanos.html">Contactanos</a></li>
+            </ul>
+        </header>
+
+    </section>
     </header>
+    <div class="formulario">
+<!-- Formulario de contacto -->
+        <form action="#" method="post" id="formularioContacto" class="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br>
+            <label for="motivo">Motivo de la consulta:</label>
+            <input type="text" id="motivo" name="motivo" required>
+            <br>
+            <label for="consulta">Consulta:</label>
+            <textarea id="consulta" name="consulta" rows="4" required></textarea>
+
+            <button type="submit">Enviar Consulta</button>
+        </form>
+
+        <!-- Información de contacto -->
+        <section id="infoContacto">
+            <h2>Información de contacto</h2>
+            <p><strong>Teléfono:</strong> 999875412</p>
+            <p><strong>Email:</strong> muymuebles@gmail.com</p>
+            <p><strong>Dirección:</strong> Sarmiento 37, Barrio Centro, Córdoba, Argentina</p>
+        </section>
+
+        <!-- Mapa de Google -->
+    </div>
     <h1>Contactanos</h1>
 
-    <!-- Formulario de contacto -->
-    <form action="#" method="post" id="formularioContacto" class="form">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-        <br>
-        <label for="motivo">Motivo de la consulta:</label>
-        <input type="text" id="motivo" name="motivo" required>
-        <br>
-        <label for="consulta">Consulta:</label>
-        <textarea id="consulta" name="consulta" rows="4" required></textarea>
-
-        <button type="submit">Enviar Consulta</button>
-    </form>
-
-    <!-- Información de contacto -->
-    <section id="infoContacto">
-        <h2>Información de contacto</h2>
-        <p><strong>Teléfono:</strong> 999875412</p>
-        <p><strong>Email:</strong> muymuebles@gmail.com</p>
-        <p><strong>Dirección:</strong> Sarmiento 37, Barrio Centro, Córdoba, Argentina</p>
-    </section>
-
-    <!-- Mapa de Google -->
+    
 
 </body>
 </html>
