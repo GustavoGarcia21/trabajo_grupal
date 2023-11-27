@@ -58,8 +58,18 @@ header .logo{
     color: black;
     font-size: 1.5em;
     text-decoration: none;
-    font-weight: bold;
-    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 20px;
 }
 
 header .navbar li a{
@@ -82,25 +92,70 @@ header .navbar li a:hover{
     position: relative;
     width: 100%;
     display: flex;
-    margin-left: 20px; /* Ajustado para dejar más espacio entre el menú y el buscador */
-    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
 }
 
-.search-form {
-    display: flex;
-    width: 300px; /* Ajusta el ancho del buscador según tus necesidades */
+
+
+
+
+.contenido .titulo{
+    position: relative;
+    max-width: 720px;
 }
 
-.search-form input {
-    flex: 1; /* Hace que el campo de entrada ocupe todo el espacio disponible */
+.contenido .titulo h2{
+    font-size: 5em;
+    text-transform: uppercase;
+    color: wheat;
+}
+
+.contenido .titulo h3{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: wheat;
+    line-height: 2;
+}
+
+.contenido .titulo h3 span{
+    background: #fff;
+    text-transform: uppercase;
+    color: rgb(12, 12, 12);
+    line-height: 2;
+    border-radius: 5px;
     padding: 5px;
 }
 
-.search-form button {
-    padding: 5px 10px;
-    background-color: #ccc;
-    border: none;
-    cursor: pointer;
+.contenido .titulo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(26, 25, 25);
+    background: rgb(134, 134, 134);
+    font-size: 40px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contenido .titulo a:hover{
+    background-color: rgb(197, 196, 196);
+    color: wheat;
+}
+
+.contenido .imagenes{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.contenido .imagenes img{
+    width: 500px;
 }
 
 
@@ -144,4 +199,12 @@ header .navbar li a:hover{
 }
 .container_principal .foto1 .infofoto:hover{
     cursor: pointer;
+}
+
+.container_principal{
+    display: flex;
+    flex-direction: column; /* Para apilar los elementos verticalmente */
+    width: 30%; /* Puedes ajustar el ancho segÃºn tus necesidades */
+    margin-right: 70%;
+    background-color: beige;
 }
