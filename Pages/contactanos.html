@@ -3,53 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="..\CSS\estilos.css">
     <title>Document</title>
 </head>
 <body class="fondo2">
     <header class="header">
         <div class="logoimg">
-            <img src="./Images/logo1.png" alt="logo" id="logo">
+            <img src="../Images/logo1.png" alt="logo" id="logo">
             <a href="#" class="logo">Muy Muebles</a>
         </div>
         
         <ul class="navbar">
+            <li><a href="../index.html">Principal</a></li>
             <li><a href="./Pages/productos.html">Productos</a></li>
             <li><a href="./Pages/quienesSomos.html">Quienes Somos</a></li>
-            <li><a href="./index.html">Principal</a></li>
+            
         </ul>
     </header>
-    <h1>Contactanos</h1>
-
-    <!-- Formulario de contacto -->
-    <form action="#" method="post" id="formularioContacto" class="form">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-        <br>
-        <label for="motivo">Motivo de la consulta:</label>
-        <input type="text" id="motivo" name="motivo" required>
-        <br>
-        <label for="consulta">Consulta:</label>
-        <textarea id="consulta" name="consulta" rows="4" required></textarea>
-
-        <button type="submit">Enviar Consulta</button>
-    </form>
-    <br>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+                <!-- Formulario de contacto -->
+                <div class="div1">
+                <h1 class="titulo_form">Contactanos</h1>
+                <br>
+                <form action="#" method="post" class="form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required class="entrada">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required class="entrada">
+                    <br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required class="entrada">
+                    <br>
+                    <label for="motivo">Motivo de la consulta:</label>
+                    <input type="text" id="motivo" name="motivo" required class="entrada">
+                    <br>
+                     <label for="consulta">Consulta:</label>
+                     <br>
+                    <textarea id="consulta" name="consulta" rows="4" required class="entrada"></textarea>
+                    <br>
+                <button type="submit">Enviar Consulta</button>
+                </form>
+                </div>
+          </div>
+          <div class="col">
+            <!-- Mapa de Google -->
+            <div class="mapa">
+            <h1 class="titulo_form"> Encontranos en..</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6810.122978142027!2d-64.18524198233688!3d-31.41243191216962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1701125378768!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>     
+    </div>
     <!-- Información de contacto -->
-    <section id="infoContacto">
+    <div class="div1">
         <h2>Información de contacto</h2>
-        <p><strong>Teléfono:</strong> 999875412</p>
-        <p><strong>Email:</strong> muymuebles@gmail.com</p>
-        <p><strong>Dirección:</strong> Sarmiento 37, Barrio Centro, Córdoba, Argentina</p>
-    </section>
-
-    <!-- Mapa de Google -->
-
+        <br>
+            <p><strong>Teléfono:</strong> 999875412</p>
+            <br>
+            <p><strong>Email:</strong> muymuebles@gmail.com</p>
+            <br>
+            <p><strong>Dirección:</strong> Sarmiento 37, Barrio Centro, Córdoba, Argentina</p>
+        </div>
 </body>
 </html>
