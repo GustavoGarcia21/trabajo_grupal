@@ -22,7 +22,7 @@ section{
     padding: 10px;
 }
 
-header{
+.header {
     position: fixed;
     background-color: rgb(82, 82, 82);
     top: 0;
@@ -32,6 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .logoimg{
@@ -165,10 +166,10 @@ header .navbar li a:hover{
     align-items: center;
 }
 
-.container_principal{
+.container_principal {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Ajusta según tu diseño deseado */
 }
 
 .container_principal img{
@@ -201,5 +202,43 @@ header .navbar li a:hover{
 }
 .container_principal .foto1 .infofoto:hover{
     cursor: pointer;
+<<<<<<< HEAD
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    flex-wrap: wrap; 
+}
+
+.form {
+    width: 100%;
+    background-color: beige;
+    margin-right: 250px;
+    margin-left:80px;
+    font-style: italic;
+    font-weight: bold;
+}
+.titulo_form{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.mapa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 200px; 
+    padding: 20px;
+    border-radius: 5px;
+    border-color: antiquewhite;
+}
+.entrada{
+    width: 100%;
+=======
+>>>>>>> 697530527841e1be0ddb0a00f39b4c6629afbeac
 }
 
