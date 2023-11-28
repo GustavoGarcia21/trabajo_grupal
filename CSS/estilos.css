@@ -200,6 +200,7 @@ header .navbar li a:hover{
 }
 .container_principal .foto1 .infofoto:hover{
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 .div1 {
@@ -235,4 +236,6 @@ header .navbar li a:hover{
 }
 .entrada{
     width: 100%;
+=======
+>>>>>>> 697530527841e1be0ddb0a00f39b4c6629afbeac
 }
