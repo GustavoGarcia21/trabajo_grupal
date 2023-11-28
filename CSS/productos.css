@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: darkgrey;
+}
+
+
+
+.header {
+    position: fixed;
+    background-color: rgb(82, 82, 82);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logoimg{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    position: relative;
+    height: 120px;
+    padding-left: 0;
+    padding-right: 10px ;
+}
+
+.header{
+    position: fixed;
+    z-index: 1;
+}
+
+
+
+header .logo{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    transition: 0.3s;
+}
+
+
+.productoss{
+    background-color: rgb(100, 100, 100);
+    text-transform: uppercase;
+}
+
+.buscar{
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.buscar input{
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 350px;
+    height: 50px;
+}
+
+.buscar button{
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.imagenoferta{
+    margin-top: 50px;
+}
+
+.imagenoferta .oferta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagenoferta .oferta .textooferta{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: x-large;
+    letter-spacing: 3px;
+}
+
+.imagenoferta .oferta .textooferta2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: xxx-large;
+    margin-top: 10px;
+    letter-spacing: 8px;
+}
+
+.todocontenido{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 10px;
+    height: 600px;
+    background-color: aquamarine;
+    justify-content: space-around;
+    position: relative;
+}
+
+.todocontenido .contenedorcategorias .categorias{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+.todocontenido .contenedorcategorias h1{
+    font-weight: 900;
+    font-size: xx-large;
+    position: absolute;
+    left: 20px;
+}
+
+
+.todocontenido .contenedorcategorias .categorias li{
+    margin: 10px;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.todocontenido .contenedorcategorias .categorias li a{
+    margin: 10px;
+    justify-content: space-between;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    list-style: none;
+    color: black;
+}
+
+.todocontenido .contenido_productos img{
+    width: 400px;
+}
+
+.todocontenido .contenido_productos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todocontenido .contenido_productos .foto{
+    border: 2px solid black;
+}
+
+.todocontenido .contenido_productos .foto p{
+    background-color: darkgray;
+    padding-left: 30%;
+}
