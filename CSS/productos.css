@@ -111,8 +111,13 @@ header .navbar li a:hover{
 
 .imagenoferta{
     margin-top: 50px;
+    background-color: rgb(71, 71, 71);
+    height: 500px;
 }
 
+#fotoimagenoferta{
+    height: 500px;
+}
 .imagenoferta .oferta{
     display: flex;
     justify-content: space-around;
@@ -124,14 +129,16 @@ header .navbar li a:hover{
     font-weight: 600;
     font-size: x-large;
     letter-spacing: 3px;
+    padding-left: 50px;
 }
 
 .imagenoferta .oferta .textooferta2{
     text-transform: uppercase;
     font-weight: 600;
     font-size: xxx-large;
-    margin-top: 10px;
+    margin-top: 30px;
     letter-spacing: 8px;
+    padding-left: 50px;
 }
 
 .todocontenido{
@@ -139,16 +146,16 @@ header .navbar li a:hover{
     margin-top: 150px;
     margin-left: 10px;
     height: 600px;
-    background-color: aquamarine;
-    justify-content: space-around;
     position: relative;
+    justify-content: space-between;
+    background-color: darkgray;
 }
 
 .todocontenido .contenedorcategorias .categorias{
     display: flex;
     flex-direction: column;
     margin: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
     left: 0;
     top: 30px;
@@ -181,19 +188,33 @@ header .navbar li a:hover{
 }
 
 .todocontenido .contenido_productos img{
-    width: 400px;
+    width: 450px;
 }
 
 .todocontenido .contenido_productos{
     display: flex;
-    justify-content: space-between;
+    position: relative;
 }
+
 
 .todocontenido .contenido_productos .foto{
     border: 2px solid black;
+    background-color: rgb(107, 105, 105);
+
 }
 
 .todocontenido .contenido_productos .foto p{
-    background-color: darkgray;
+    background-color: rgb(107, 105, 105);
     padding-left: 30%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.todocontenido .contenido_productos .productos{
+    display: flex;
+    background-color: aqua;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 20px;
 }
