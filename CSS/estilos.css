@@ -172,7 +172,7 @@ header .navbar li a:hover{
 }
 
 .container_principal img{
-    width: 350px;
+    width: 400px;
 }
 
 .container_principal .foto1{
@@ -188,10 +188,12 @@ header .navbar li a:hover{
 .container_principal .foto1 .infofoto{
     background-color: rgb(197, 196, 196);
     margin: 0;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .container_principal .foto1 .infofoto p{
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .container_principal .foto1:hover{
@@ -200,3 +202,4 @@ header .navbar li a:hover{
 .container_principal .foto1 .infofoto:hover{
     cursor: pointer;
 }
+
