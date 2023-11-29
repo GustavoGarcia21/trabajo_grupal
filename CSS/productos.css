@@ -140,17 +140,15 @@ header .navbar li a:hover{
 }
 
 .todocontenido{
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 200px repeat(4, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    border: 4px solid black;
+    grid-template-rows: repeat(2, 250px);
     grid-gap: 10px;
+    grid-auto-flow: column;
 }
 
-.itemgrid{
-    background-color: aquamarine;
-    border: 2px solid black;
-}
+
 
 
 .todocontenido .container_productos img{
@@ -191,8 +189,9 @@ header .navbar li a:hover{
 .foto{
     background-color: rgb(85, 85, 85);
     color: antiquewhite;
-    border: 4px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .foto img{
@@ -210,4 +209,45 @@ header .navbar li a:hover{
 
 .itemgrid-3{
     grid-column: 4;
+}
+
+.itemgrid-4{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.itemgrid-5{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.itemgrid-6{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.contenedor_contactanos{
+    margin-top: 80px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-row: 350px;
+    width: 950px;
+    background-color: aqua;
+    padding: 20px 40px;
+}
+
+
+.texto{
+    grid-column: 1;
+}
+.imagen{
+    margin-top: ;
+    grid-column: 2;
+}
+
+.imagen img{
+    position: relative;
+    height: 350px;
+    width: 100%;
 }
