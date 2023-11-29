@@ -3,48 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="..\CSS\estilos.css">
+    <link rel="stylesheet" href="..\CSS\contactanos.css">
     <title>Document</title>
 </head>
 <body class="fondo2">
     <section>
-        <header>
+        <header class="header">
             <div class="logoimg">
                 <img src="../Images/logo1.png" alt="logo" id="logo">
                 <a href="../index.html" class="logo">Muy Muebles</a>
             </div>
             
             <ul class="navbar">
-                <li><a href="../Pages/productos.html">Productos</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="productoss"><a href="../Pages/productos.html">Productos</a></li>
                 <li><a href="../Pages/quienesSomos.html">Quienes Somos</a></li>
-                <li><a href="../Pages/contactanos.html">Contactanos</a></li>
             </ul>
         </header>
-
-        
     </section>
-    <h1>Contactanos</h1>
+    <div class="div1">
+        <h1 class="titulo-form">Contactanos</h1>
 
-    <!-- Formulario de contacto -->
-    <form action="#" method="post" id="formularioContacto" class="form">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-        <br>
-        <label for="motivo">Motivo de la consulta:</label>
-        <input type="text" id="motivo" name="motivo" required>
-        <br>
-        <label for="consulta">Consulta:</label>
-        <textarea id="consulta" name="consulta" rows="4" required></textarea>
-
-        <button type="submit">Enviar Consulta</button>
-    </form>
+        <!-- Formulario de contacto -->
+        <form action="#" method="post" id="formularioContacto" class="form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br>
+            <label for="motivo">Motivo de la consulta:</label>
+            <input type="text" id="motivo" name="motivo" required>
+            <br>
+            <label for="consulta">Consulta:</label>
+            <textarea id="consulta" name="consulta" rows="4" required></textarea>
+            <button type="submit">Enviar Consulta</button>
+        </form>
+    </div>
     <br>
     <!-- Información de contacto -->
     <section id="infoContacto">
