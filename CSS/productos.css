@@ -24,7 +24,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
 }
 
 .logoimg{
@@ -41,7 +40,6 @@ body{
 
 .header{
     position: fixed;
-    z-index: 1;
 }
 
 
@@ -142,79 +140,74 @@ header .navbar li a:hover{
 }
 
 .todocontenido{
-    display: flex;
-    margin-top: 150px;
-    margin-left: 10px;
-    height: 600px;
-    position: relative;
-    justify-content: space-between;
-    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 200px repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    border: 4px solid black;
+    grid-gap: 10px;
 }
 
-.todocontenido .contenedorcategorias .categorias{
+.itemgrid{
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+
+
+.todocontenido .container_productos img{
+    height: 300px;
+}
+
+.itemgrid-1{
+    grid-row: 1 / span 3;
+}
+
+.contenedorcategorias{
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    justify-content: space-between;
-    position: absolute;
-    left: 0;
-    top: 30px;
-}
-
-.todocontenido .contenedorcategorias h1{
-    font-weight: 900;
-    font-size: xx-large;
-    position: absolute;
-    left: 20px;
-}
-
-
-.todocontenido .contenedorcategorias .categorias li{
-    margin: 10px;
-    justify-content: space-between;
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.todocontenido .contenedorcategorias .categorias li a{
-    margin: 10px;
-    justify-content: space-between;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    list-style: none;
-    color: black;
-}
-
-.todocontenido .contenido_productos img{
-    width: 450px;
-}
-
-.todocontenido .contenido_productos{
-    display: flex;
+    padding: 10px;
     position: relative;
 }
 
-
-.todocontenido .contenido_productos .foto{
-    border: 2px solid black;
-    background-color: rgb(107, 105, 105);
-
+.categorias li{
+    list-style: none;
+    padding: 10px;
 }
-
-.todocontenido .contenido_productos .foto p{
-    background-color: rgb(107, 105, 105);
-    padding-left: 30%;
-    font-weight: 700;
-    text-transform: uppercase;
+.categorias a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
     letter-spacing: 2px;
+    padding: 10px;
 }
 
-.todocontenido .contenido_productos .productos{
-    display: flex;
-    background-color: aqua;
-    flex-wrap: wrap;
-    position: absolute;
-    right: 20px;
+.contenedorcategorias h1{
+    font-weight: 900;
+    border-bottom: 2px solid black;
+    margin: auto;
+    padding: 10px;
+}
+
+/*Estilos cuadros fotos*/
+.foto{
+    background-color: rgb(85, 85, 85);
+    color: antiquewhite;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.foto img{
+    height: 220px;
+}
+
+.foto p{
+    margin-left: 7em;
+    font-weight: 800;
+}
+
+.itemgrid-2{
+    grid-column: 3;
+}
+
+.itemgrid-3{
+    grid-column: 4;
 }
