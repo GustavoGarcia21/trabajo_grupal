@@ -25,6 +25,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    margin-bottom: 10px;
 }
 
 .logoimg{
@@ -39,10 +40,7 @@ body{
     padding-right: 10px ;
 }
 
-.header{
-    position: fixed;
-    z-index: 1;
-}
+
 
 
 
@@ -79,9 +77,10 @@ header .navbar li a:hover{
     transition: 0.3s;
 }
 
-
+.div-form{
+    display: inline-block;
+}
 .titulo_form{
-    display: flex;
     margin-top: 80px;
     margin-left: 80px;
 }
@@ -90,14 +89,15 @@ header .navbar li a:hover{
     width: 50%;
     background-color: beige;
     margin-right: 250px;
-    margin-left:80px;
+    margin-left: 80px;
     font-style: italic;
     font-weight: bold;
+    margin-top: 20px; /* Agrega un margen superior al formulario */
 }
 
 
 .mapa{
-    width: 100%;
+    width: 50em;
     display: flex;
     flex-direction: column;
     margin-top: 150px;
