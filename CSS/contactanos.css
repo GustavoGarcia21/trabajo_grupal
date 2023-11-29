@@ -78,31 +78,55 @@ header .navbar li a:hover{
 }
 
 .div-form{
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    padding: 200px 0px 20px 0px;
+    background-color: darkgrey;
 }
-.titulo_form{
-    margin-top: 80px;
-    margin-left: 80px;
+.titulo-form{
+    display: inline-flex;
 }
 
 .form {
     width: 50%;
-    background-color: beige;
+    background-color:darkcyan;
+    margin-top: 20px; 
     margin-right: 250px;
     margin-left: 80px;
     font-style: italic;
     font-weight: bold;
-    margin-top: 20px; /* Agrega un margen superior al formulario */
+    align-items: center;
+    
 }
 
+.item-name{
+    font-weight: bold;
+}
 
+.item{
+    width:100%;
+}
+
+.item2{
+    width:100%;
+    margin-bottom: 0;
+}
+
+.buttom{
+    margin: 50px 0px;
+    padding: 10px;
+}
 .mapa{
-    width: 50em;
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    margin-left: 200px; 
-    padding: 20px;
+   
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 80px; 
+    padding: 5px;
     border-radius: 5px;
-    border-color: antiquewhite;
+    border-color: rgb(19, 16, 12);
+}
+.info-contacto{
+    padding: 20px;
+    margin: 20px 0px ;
 }
