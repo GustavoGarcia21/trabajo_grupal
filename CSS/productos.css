@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
 
 *{
     margin: 0;
@@ -24,6 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .logoimg{
@@ -228,26 +229,59 @@ header .navbar li a:hover{
 
 .contenedor_contactanos{
     margin-top: 80px;
-    margin-left: 200px;
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 350px 350px 350px;
     grid-row: 350px;
-    width: 950px;
-    background-color: aqua;
+    background-color: rgb(49, 51, 51);
     padding: 20px 40px;
 }
 
 
 .texto{
-    grid-column: 1;
+    grid-column: 2;
 }
 .imagen{
-    margin-top: ;
-    grid-column: 2;
+    margin-top: 10px;
+    grid-column: 3;
 }
 
 .imagen img{
     position: relative;
     height: 350px;
-    width: 100%;
+    border-radius: 15px;
 }
+
+.texto{
+    letter-spacing: 3px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.texto p{
+    padding-top: 55px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(248, 247, 245);
+}
+
+.botoncontacto{
+    margin-top: 25px;
+}
+
+.botoncontacto button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    background-color: darkgray;
+
+}
+
+.botoncontacto button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
